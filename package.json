@@ -1,0 +1,22 @@
+{
+  "name": "tugas-commitlint",
+  "version": "1.0.0",
+  "description": "Validasi commit message otomatis dengan commitlint dan Husky",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Muhammad Irfan Ar Rafi",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0"
+  },
+  "lint-staged": {
+    "*.js": "node --check"
+  }
+}
